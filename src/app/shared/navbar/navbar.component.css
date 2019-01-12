@@ -1,0 +1,9 @@
+.exit-session{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+h5{
+  margin-left: 10px;
+}
