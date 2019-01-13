@@ -1,0 +1,15 @@
+.login{
+  margin-top: 100px;
+  width: 400px;
+  height: 500px;
+}
+
+.mat-form-field{
+  width: 100%;
+}
+
+.buttonEnter{
+  width: 100%;
+    background: aliceblue;
+    height: 50px;
+}

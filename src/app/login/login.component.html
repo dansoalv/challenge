@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <mat-card class="login">
+            <h4 style="text-align:center">Challenge</h4>
+            <hr>
+            <br>
+            <br>
+            <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Usuario</mat-label>
+                  <input matInput placeholder="Correo electrónico" [(ngModel)]="email">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Ingresar correo electrónico</mat-hint>
+                </mat-form-field>
+              </p>
+
+              <p>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput placeholder="Contraseña" type="password" [(ngModel)]="password">
+                    <mat-icon matSuffix>security</mat-icon>
+                    <mat-hint>Ingresar Contraseña</mat-hint>
+                  </mat-form-field>
+                </p>
+              <br>
+              <button mat-button class="buttonEnter" (click)="onSubmit()" >Ingresar</button>
+        </mat-card>
+      </div>
+    </div>
+  </div>
