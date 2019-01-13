@@ -2,6 +2,7 @@
     <div class="row justify-content-md-center">
       <div class="col-md-auto">
         <mat-card class="login">
+          <div *ngIf="!loading">
             <h4 style="text-align:center">Challenge</h4>
             <hr>
             <br>
@@ -25,6 +26,12 @@
                 </p>
               <br>
               <button mat-button class="buttonEnter" (click)="onSubmit()" >Ingresar</button>
+          </div>
+          <div *ngIf="loading" style="    text-align: -webkit-center;
+          margin-top: 180px;">
+              <mat-spinner></mat-spinner>
+          </div>
+
         </mat-card>
       </div>
     </div>
