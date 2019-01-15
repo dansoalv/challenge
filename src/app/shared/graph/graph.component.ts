@@ -25,6 +25,11 @@ export class GraphComponent implements OnInit {
 
   ngOnInit() {
     this.getDataToGraph();
+    this._gbmService.getDataToGraph().subscribe(response => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    });
   }
 
   getDataToGraph() {
